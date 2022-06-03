@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+.prod-btn{
+    margin-right: 10px;
+}
+.card-text{
+    font-size: small;
+}
+.navbar-btn{
+    margin-left:10px;
+}
+.cartEmptyAlert{
+    margin-top: 15px;
+}
+.cart-item-text{
+    font-size: 14px;
+}

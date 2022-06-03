@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-md-3">
+        <img class="bd-placeholder-img card-img-top" width="40px" height="40px" [src]="cartItem.prod_img_url">
+    </div>
+    <div class="col-md-9">
+        <p class="cart-item-text">{{cartItem.prod_name}}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <strong><p class="cart-item-text text-muted">Qty : {{cartItem.prod_qty}}</p></strong>                                                                                                                                                              
+    </div>
+    <div class="col-md-7">
+        <strong><p class="cart-item-text">{{(cartItem.prod_qty * cartItem.prod_price) | currency:'USD'}}</p></strong> 
+    </div>
+    <div class="col-md-2">
+        
+    </div>
+</div>
