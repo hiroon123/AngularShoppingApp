@@ -67,13 +67,13 @@
   "cartItems": [
     {
       "product": {
-        "prod_id": 3,
-        "prod_name": "Corsair Vengeance RGB Pro 32GB",
-        "prod_desc": "High performance DDR4 memory illuminates your system with vivid, animated lighting from ten ultra-bright, individually addressable RGB LEDs per module.",
-        "prod_price": 150,
-        "prod_img_url": "https://m.media-amazon.com/images/I/61GpY38PAWL._AC_SY200_.jpg"
+        "prod_id": 2,
+        "prod_name": "3X3 Rubix Cube",
+        "prod_desc": "Speed Cube 3x3 is the classic color-matching puzzle. Turn and twist the sides of the cube so that each of the six faces only has one color. Suitable for beginner and professional players.",
+        "prod_price": 25,
+        "prod_img_url": "https://m.media-amazon.com/images/I/71WS9kb-JFL._AC_UL640_FMwebp_QL65_.jpg"
       },
-      "id": 20
+      "id": 2
     },
     {
       "product": {
@@ -83,17 +83,7 @@
         "prod_price": 25,
         "prod_img_url": "https://m.media-amazon.com/images/I/71WS9kb-JFL._AC_UL640_FMwebp_QL65_.jpg"
       },
-      "id": 21
-    },
-    {
-      "product": {
-        "prod_id": 3,
-        "prod_name": "Corsair Vengeance RGB Pro 32GB",
-        "prod_desc": "High performance DDR4 memory illuminates your system with vivid, animated lighting from ten ultra-bright, individually addressable RGB LEDs per module.",
-        "prod_price": 150,
-        "prod_img_url": "https://m.media-amazon.com/images/I/61GpY38PAWL._AC_SY200_.jpg"
-      },
-      "id": 22
+      "id": 3
     },
     {
       "product": {
@@ -103,7 +93,18 @@
         "prod_price": 270.3,
         "prod_img_url": "https://m.media-amazon.com/images/I/71Dl1Mewm5L._AC_UY436_FMwebp_QL65_.jpg"
       },
-      "id": 23
+      "id": 4
+    }
+  ],
+  "wishlist": [
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 8
     }
   ]
 }

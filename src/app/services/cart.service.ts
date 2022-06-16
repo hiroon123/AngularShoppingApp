@@ -42,4 +42,8 @@ export class CartService {
   addProductToCart(product: Product):Observable<any>{
     return this.http.post(cartItemsUrl,{ product })
   }
+
+  removeProductFromCart(cart_item_id:number){
+    return this.http.delete(cartItemsUrl+'/'+cart_item_id)
+  }
 }

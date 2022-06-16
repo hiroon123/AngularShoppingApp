@@ -18,7 +18,7 @@
     <!-- Collapsible wrapper -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <!-- Navbar brand -->
-      <a class="navbar-brand mt-2 mt-lg-0" href="#">
+      <a class="navbar-brand mt-2 mt-lg-0" routerLink="/">
         <img
           src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/FKLite-205d58.png"
           height="50px"
@@ -29,13 +29,13 @@
       <!-- Left links -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link text-mute" href="#">Home</a>
+          <a class="nav-link text-mute" routerLink="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">All Products</a>
+          <a class="nav-link" routerLink="/shop">All Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Deal of the day</a>
+          <a class="nav-link" routerLink="/">Deal of the day</a>
         </li>
       </ul>
       <!-- Left links -->
@@ -45,10 +45,8 @@
     <!-- Right elements -->
     <div class="d-flex align-items-center">
       <!-- Icon -->
-      <a class="text-reset me-3" href="#">
-        <button class="btn btn-outline-success btn-sm navbar-btn"><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</button>
-        <button class="btn btn-outline-primary btn-sm navbar-btn"><i class="fa-solid fa-user-plus"></i> Signup</button>
-      </a>
+        <a routerLink="/login"><button class="btn btn-outline-dark btn-sm navbar-btn">Sign in</button></a>
+        <a routerLink="/register"><button class="btn btn-outline-secondary btn-sm navbar-btn">Create Account</button></a>
     </div>
     <!-- Right elements -->
   </div>
