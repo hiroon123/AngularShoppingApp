@@ -67,23 +67,13 @@
   "cartItems": [
     {
       "product": {
-        "prod_id": 2,
-        "prod_name": "3X3 Rubix Cube",
-        "prod_desc": "Speed Cube 3x3 is the classic color-matching puzzle. Turn and twist the sides of the cube so that each of the six faces only has one color. Suitable for beginner and professional players.",
-        "prod_price": 25,
-        "prod_img_url": "https://m.media-amazon.com/images/I/71WS9kb-JFL._AC_UL640_FMwebp_QL65_.jpg"
+        "prod_id": 1,
+        "prod_name": "Microsoft Xbox Series S Console - 512GB",
+        "prod_desc": "Access your favorite entertainment through apps like YouTube, Netflix, and more.Enjoy over 100 games right out of the box with a 1 month Xbox Game Pass trial.",
+        "prod_price": 270.3,
+        "prod_img_url": "https://m.media-amazon.com/images/I/71Dl1Mewm5L._AC_UY436_FMwebp_QL65_.jpg"
       },
-      "id": 2
-    },
-    {
-      "product": {
-        "prod_id": 2,
-        "prod_name": "3X3 Rubix Cube",
-        "prod_desc": "Speed Cube 3x3 is the classic color-matching puzzle. Turn and twist the sides of the cube so that each of the six faces only has one color. Suitable for beginner and professional players.",
-        "prod_price": 25,
-        "prod_img_url": "https://m.media-amazon.com/images/I/71WS9kb-JFL._AC_UL640_FMwebp_QL65_.jpg"
-      },
-      "id": 3
+      "id": 4
     },
     {
       "product": {
@@ -93,7 +83,17 @@
         "prod_price": 270.3,
         "prod_img_url": "https://m.media-amazon.com/images/I/71Dl1Mewm5L._AC_UY436_FMwebp_QL65_.jpg"
       },
-      "id": 4
+      "id": 5
+    },
+    {
+      "product": {
+        "prod_id": 2,
+        "prod_name": "3X3 Rubix Cube",
+        "prod_desc": "Speed Cube 3x3 is the classic color-matching puzzle. Turn and twist the sides of the cube so that each of the six faces only has one color. Suitable for beginner and professional players.",
+        "prod_price": 25,
+        "prod_img_url": "https://m.media-amazon.com/images/I/71WS9kb-JFL._AC_UL640_FMwebp_QL65_.jpg"
+      },
+      "id": 6
     }
   ],
   "wishlist": [

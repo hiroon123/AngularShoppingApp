@@ -8,18 +8,11 @@
 </div>
 <br>
 <div class="row">
-    <div class="col-md-4">   
-        <strong><p class="cart-item-text mt-1">{{(cartItem.prod_qty * cartItem.prod_price) | currency:'USD'}}</p></strong>                                                                                                                                                            
+    <div class="col-md-4">
+        <strong><p class="cart-item-text mt-1 text-muted">Qty: {{cartItem.prod_qty}}</p></strong>                                                                                                                                                               
     </div>
     <div class="col-md-5 justify-content-between align-items-center">
-        <label class="form-label text-muted">Quantity</label>
-        <button class="btn btn-link px-2" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-            <i class="fas fa-minus"></i>
-        </button>
-        <input id="form1" min="0" name="quantity" value="{{cartItem.prod_qty}}" type="number" class="form-control form-control-sm" />
-        <button class="btn btn-link px-2" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-            <i class="fas fa-plus"></i>
-        </button>
+        <strong><p class="cart-item-text mt-1">{{(cartItem.prod_qty * cartItem.prod_price) | currency:'USD'}}</p></strong>
     </div>
     <div class="col-md-2">
         <button class="btn btn-sm btn-outline-danger" (click)="handleRemoveFromCart()"><i class="fa fa-trash"></i></button>
