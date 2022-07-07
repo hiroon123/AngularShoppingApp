@@ -4,3 +4,7 @@ export const apiUrl = environment.production ? 'http://api.shopsy.com/' : 'http:
 export const productsUrl = apiUrl + '/products'
 export const cartItemsUrl = apiUrl + '/cartItems'
 export const wishListUrl = apiUrl + '/wishlist'
+
+export const WebApiUrl = 'https://localhost:7081/api';
+export const registerUserUrl = WebApiUrl + '/User/Register'
+export const loginUserUrl = WebApiUrl + '/User/Login'

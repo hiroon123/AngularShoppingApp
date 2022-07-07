@@ -4,12 +4,12 @@
         <div class="col">
           <div class="card card-registration my-4" style="border-radius: 1rem;">
             <div class="row g-0">
-              <div class="col-xl-5 d-none d-xl-block">
+              <div class="col-xl-4 d-none d-xl-block">
                 <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
                   alt="Sample photo" class="img-fluid"
                   style="border-top-left-radius: 1rem; border-bottom-left-radius: 1rem;" />
               </div>
-              <div class="col-xl-7">
+              <div class="col-xl-8">
                 <div class="card-body p-md-5 text-black">
                   <div class="d-flex mb-3 ml-n3">
                        <img
@@ -41,19 +41,6 @@
                         formControlName="lastname"
                       />
                       <span class="invalid-feedback text-end">Name is mandatory!</span>
-                    </div>
-    
-                    <div class="input-group">
-                      <span class="input-group-text">Address</span>
-                      <input
-                        type="text"
-                        id="address"
-                        class="form-control"
-                        placeholder="Aparment / House No, Street, City"
-                        [ngClass]="{'is-invalid':registerForm.get('address')?.touched && registerForm.get('address')?.invalid}"
-                        formControlName="address"
-                      />
-                      <span class="invalid-feedback text-end">Address is mandatory!</span>
                     </div>
     
                     <div class="row mt-4">

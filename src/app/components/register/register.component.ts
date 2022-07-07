@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { UserService } from 'src/app/services/user.service';
 
 /**
  * 
@@ -33,7 +35,11 @@ export class RegisterComponent implements OnInit {
 
   registerForm !: FormGroup;
 
-  constructor(private builder:FormBuilder) { }
+  constructor(
+    private builder:FormBuilder,
+    private userService:UserService,
+    private router:Router
+    ) { }
 
   ngOnInit(): void {
     this.buildForm()
@@ -43,7 +49,6 @@ export class RegisterComponent implements OnInit {
     this.registerForm = this.builder.group({
       firstname: ['',Validators.required],
       lastname:['',Validators.required],
-      address:['',Validators.required],
       dob:['',Validators.required],
       gender:'Male',
       emailaddress:['',[Validators.required,Validators.email]],
@@ -54,8 +59,20 @@ export class RegisterComponent implements OnInit {
     })
   }
 
+  //Save data by calling userService->addUser() method
   register(){
-    console.log(this.registerForm.value)
+    var user = {
+      "email":this.registerForm.value.emailaddress,
+      "password": this.registerForm.value.password,
+      "first_name": this.registerForm.value.firstname,
+      "last_name": this.registerForm.value.lastname,
+      "dob": this.registerForm.value.dob,
+      "gender": this.registerForm.value.gender
+    };
+    this.userService.registerUser(user).subscribe((result) => {
+      console.log(result)
+     // this.router.navigate(['/register-success']);
+    })
   }
 
 }

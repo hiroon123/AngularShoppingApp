@@ -11,7 +11,7 @@
               <div class="col-lg-7 d-flex align-items-center">
                 <div class="card-body p-4 p-lg-5 text-black">
 
-                  <form #loginForm="ngForm" (ngSubmit)="loginForm.valid && login()">
+                  <form [formGroup]="loginForm" (ngSubmit)="login()">
   
                     <div class="d-flex mb-3 ml-n3">
                        <img
@@ -24,17 +24,32 @@
                     <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
   
                     <div class="form-outline mb-4">
-                      <input type="email" class="form-control form-control-md" placeholder="Email Address" name="emailaddress" [ngClass]="{ 'is-invalid': emailaddress.touched && emailaddress.invalid }" #emailaddress="ngModel" [(ngModel)]="model.emailaddress" required />
+                      <input type="email"
+                      class="form-control form-control-md"
+                      placeholder="Email Address"
+                      name="emailaddress"
+                      [ngClass]="{ 'is-invalid': loginForm.get('emailaddress')?.touched && loginForm.get('emailaddress')?.invalid }"
+                      formControlName="emailaddress" />
                       <span class="invalid-feedback">Username is mandatory!</span>
                     </div>
   
                     <div class="form-outline mb-4">
-                      <input type="password" class="form-control form-control-md" placeholder="Password" name="password" [ngClass]="{ 'is-invalid': password.touched && password.invalid }" #password="ngModel" [(ngModel)]="model.password" required />
+                      <input type="password"
+                      class="form-control form-control-md"
+                      placeholder="Password"
+                      name="password"
+                      [ngClass]="{ 'is-invalid': loginForm.get('password')?.touched && loginForm.get('password')?.invalid }"
+                      formControlName="password"
+                      />
                       <span class="invalid-feedback">Password is mandatory!</span>
                     </div>
 
                     <div class="form-check mb-4">
-                      <input type="checkbox" class="form-check-input" name="rememberme" #rememberme="ngModel" [(ngModel)]="model.rememberme"/>
+                      <input type="checkbox"
+                      class="form-check-input"
+                      name="rememberme"
+                      formControlName="rememberme"
+                      />
                       <label class="form-check-label" for="rememberme">Remember me</label>
                     </div>
   

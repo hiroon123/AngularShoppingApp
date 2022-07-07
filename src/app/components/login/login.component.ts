@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-login',
@@ -7,15 +10,35 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  model : any = {}
+  loginForm !: FormGroup;
 
-  constructor() { }
+  constructor(
+    private builder:FormBuilder,
+    private userService:UserService,
+    private router:Router
+  ) { }
 
   ngOnInit(): void {
+    this.buildForm();
   }
 
+  buildForm(){
+    this.loginForm = this.builder.group({
+      emailaddress:['',[Validators.required,Validators.email]],
+      password:['',[Validators.required]],
+      rememberme:false
+    })
+  }
+
+  //Save data by calling userService->addUser() method
   login(){
-    console.log(this.model)
+    var user = {
+      "email":this.loginForm.value.emailaddress,
+      "password":this.loginForm.value.password
+    };
+    this.userService.loginUser(user).subscribe((result) => {
+      console.log(result);
+    })
   }
 
 }
