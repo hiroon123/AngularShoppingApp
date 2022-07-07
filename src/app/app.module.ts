@@ -20,6 +20,7 @@ import { LoginComponent } from './components/login/login.component';
 import { PageNotFoundComponent } from './components/shared/page-not-found/page-not-found.component';
 import { RegisterComponent } from './components/register/register.component';
 import { RegisterSuccessComponent } from './components/shared/register-success/register-success.component';
+import { AccountVerifyComponent } from './components/shared/account-verify/account-verify.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { RegisterSuccessComponent } from './components/shared/register-success/r
     PageNotFoundComponent,
     LoginComponent,
     RegisterComponent,
-    RegisterSuccessComponent
+    RegisterSuccessComponent,
+    AccountVerifyComponent
   ],
   imports: [
     AppRoutingModule,
